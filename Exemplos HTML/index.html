@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pokeball.ico" type="image/x-icon">
+    <title>Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Estudos do HTML5</h1>
+        <hr>
+        <!--------------------------------------Links-------------------------------------------->
+        <h2>Links</h2>
+        <h3>Links Externos</h3>
+        <p>Acessando <a href="https://google.com" target="_blank" rel="external">link externo</a></p> <!--Target _blank para abrir uma nova guia do navegador, rel external para identificar como link externo-->
+        <p>Acessando <a href="https://google.com" rel="nofollow">link de patrocínio</a> sem ligação com o site</p> <!--rel no follow significa que este link não tem ligação com seu site, vc não da aval para ele-->
+        <h3>Links Internos</h2>
+        <p>Acessando Página 002 <a href="pag002.html" rel="next">link interno</a></p><!---rel prev ou next para informar se é uma pagina anterior ou posterior a outra-->
+        <p>Acessando Página 003 <a href="noticias/pag003.html" rel="next" target="_self">link interno</a> dentro de uma pasta</p> <!--usar o target _self para paginas na mesma aba do navegador, OPCIONAL, deixar em branco tb abre na mesma aba! -->
+        <h3>Links para download</h2>
+        <Ul>
+            <li><a href="pdf-download/01 - História da Internet.pdf" download="01 - História da Internet.pdf" type="application/pdf">Download Pdf</a></li>
+            <li><a href="pdf-download/01 - História da Internet.rar" download="01 - História da Internet.rar" type="application/zip">Download Zip</a></li>
+        </ul>
+        <p></p>
+        <hr>
+        <!--------------------------------------Imagem-------------------------------------------->
+        <h2>Imagens</h2>
+        <h3>Imagem Comum</h3>
+        <img src="HTML5_Logo_512-300x300.png" alt="HTML Logo">
+        <h3>Imagem adaptativa à tela</h3>
+        <p>Para visualizar <a href="pag004.html">clique aqui</a></p>
+        <p></p>
+        <hr>
+        <!--------------------------------------Áudio-------------------------------------------->
+        <h2>Áudio</h2>
+        <audio src="midia/Pray.mp3" controls></audio> <br><!--para tocar automaticamente usar o parametro autoplay-->
+        <audio preload="metadata" controls>
+            <source src="midia/Pray.mp3" type="audio/mpeg">
+        </audio>
+        <hr>
+        <!-------------------------------------Vídeo-------------------------------------------->
+        <h2>Vídeo</h2>
+        <h3>Videos Hospedados localmente</h3>
+        <video src="midia/ex-video.mp4" width="560" controls></video><br>
+        <video width="560" controls> <!--Assim pode-se botar varios formatos do mesmo video para maior compatibilidade com os diversos navegadores/ Seguindo a ordem de cima para baixo-->
+            <source src="midia/ex-video.mp4" type="video/mp4">
+            <source src="midia/Ex-Video-1.m4v" type="video/mp4">
+            <p>Seu navegador não tem compatibilidade!</p>
+        </video>
+        <h3>Videos Externos</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/av7TkrRaanc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <!--------------------------------Principais Formatações-------------------------------->
+        <h2>Principais formatações</h2>
+        <h3>Negrito / Destaque</h3>
+        <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semanatica / Errada)</p>
+        <p>Nesta frase temos um <strong>termo em negrito</strong> usando a tag strong (com semantica / Correta)</p>
+        <h3>Itálico / Ênfase</h3>
+        <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semantica / Errada)</p>
+        <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag EM (com semantica / Correta)</p>
+        <h3>Texto marcado</h3>
+        <p>Podemos criar também um <mark style="background-color: lime;">texto marcado</mark> usando a tag MARK</p>
+        <h3>Texto grande e pequeno</h3>
+        <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small>.</p> <!--BIG está obsoleto e parará de funcionar em breve-->
+        <h3>Texto deletado</h3>
+        <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+        <h3>Texto inserido</h3>
+        <p>Podemos marcar um <ins>texto como inserido</ins> para indicar que ele foi adicionado depois</p>
+        <p>Existe também o <u>texto sublinhado</u> com a tag U (não semantica / Errada)</p>
+        <h3>Texto sobrescrito</h3>
+        <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+        <h3>Texto subscrito</h3>
+        <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+        <hr>
+        <!----------------------------------Outras Formatações-------------------------------------->
+        <h2>Outras Formatações</h2>
+        <h3>Código-Fonte</h3>
+        <p>Serve para indicar uma linha de código usando uma fonte monoespaçada ex: <code>document.getElementById('Teste')</code></p>
+        <h3>Código fonte com identação</h3> <!--comando pre + code juntos-->
+        <pre><code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é IMPAR')
+        print('Fim do programa!')
+        </code></pre>
+        <h3>Citações simples</h3>
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido!</q></p>
+        <h3>Citações completas</h3> <!--Não muda nada visualmente mas facilita os mecanismos de busca etc-->
+        <p>Segundo fulano <blockquote cite="linkdeondeveioacitaçãoaqui">texto do fulano aqui</blockquote></p>
+        <h3>Abreviações</h3> <!--Não muda nada visualmente mas facilita os mecanismos de busca etc-->
+        <p>Estou estudando <abbr title="HyperText Markup Style">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+        <h3>Texto invertido</h3>
+        <p><bdo dir="rtl">Aqui iremos inverter um texto</bdo></p>
+        <hr>
+        <!--------------------------------------Listas-------------------------------------------->
+        <h2>Listas</h2>
+        <h3>Listas Ordenadas</h3>
+        <ol type="1" start="1">
+            <li>Acordar <!---o fechamento da tag </li> é opcional a partir do HTML5-->
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+        </ol>
+        <h3>Listas não ordenadas</h3>
+        <ul type="disc"> <!--disc , square, circle-->
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Arroz</li>
+        </ul>
+        <h3>Aninhamento de listas</h3>
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+            <li>Novas</li>
+            <ol type="a">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+        </ol>
+        <h3>Lista de Definições</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+        </dl>
+        
+        <hr>
+    </main>
+
+    
+</body>
+</html>

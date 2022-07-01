@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*fonte importara do google fonts*/
+
+body {
+    background-color: rgb(188, 188, 255);
+    font: normal normal 1em 'Roboto', sans-serif; /*Shorthand = font: style variant weight size family  - Tudo em uma linha
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;   - Usar px ou em (1em = tamanho padrão, equivale a 16px normalmente)
+    font-weight: normal;
+    font-style: normal;
+    */
+
+}
+
+main {
+    background-color: white;
+    width: 600px; /* Largura da Main */
+    border-radius: 10px; /* Arredondamento da borda */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329); /* Sombras do quadrado */
+    padding: 10px; /* distancia da margem até o começo dos elementos */
+    margin: auto; /* Orientação do main em relação ao body (pagina inteira) - no caso centralizado na tela */
+    text-indent: 10px; /* Distancia do inicio do texto entre a borda */
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    background-color: rgb(184, 184, 184);
+}
+
+h3 {
+    background-color: rgb(247, 247, 247);
+}
+
+video {
+    display: block;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+audio {
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+  
