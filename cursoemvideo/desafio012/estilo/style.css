@@ -1,0 +1,63 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-size: 3vw;
+    line-height: 1.8em;
+}
+
+header {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 50px;
+}
+
+header > p {
+    font-size: 20px;
+}
+
+.sectext {
+    padding: 40px;
+    background-color: rgb(253, 236, 215);
+}
+
+#container01 {
+    position: relative;
+    height: 50vw;
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container02 {
+    position: relative;
+    height: 50vw;
+    background-image: url('../imagens/background002.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conteudo {
+    position: absolute;
+    padding: 10px;
+    margin: auto;
+    max-height: 700px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.432);
+    left: 40px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
