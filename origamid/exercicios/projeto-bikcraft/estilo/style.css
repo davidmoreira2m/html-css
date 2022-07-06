@@ -8,6 +8,7 @@ body {
     text-align: center;
     background-color: #f7f7f7;
     font-size: 1.25rem;
+    margin: 0 auto;
 }
 
 p {
@@ -148,6 +149,10 @@ footer {
     .main-grid{
         grid-template-columns: 1fr;
     }
+    .grid-descricao {
+        justify-items: center;
+        text-align: center;
+    }
     .grid-descricao::after{
         display: none;
     }
@@ -160,6 +165,10 @@ footer {
     }
     #bikcraft {
         margin-top: 30px;
+    }
+
+    #vantagens {
+        text-align: center;
     }
 
     #lista-menu {
