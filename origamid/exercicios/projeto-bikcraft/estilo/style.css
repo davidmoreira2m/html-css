@@ -63,7 +63,7 @@ p {
     position: relative;
 }
 
-.grid-descricao::after{ /*Detalhe vermelho*/
+/* .grid-descricao::after{ 
     content: "";
     width: 60px;
     height: 4px;
@@ -72,7 +72,7 @@ p {
     top: 40px;
     right: -30px;
 
-}
+} */
 
 .img {
     max-width: 100%;
