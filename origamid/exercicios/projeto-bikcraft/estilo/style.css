@@ -3,6 +3,18 @@
     margin: 0px;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-size: 20px;
+}
+
+#bikcraft {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
 #menu {
     display: flex;
     gap: 20px;
@@ -11,13 +23,8 @@
     justify-content: center;
 }
 
-#bikcraft {
-    font-size: 40px;
-    margin-top: 50px;
-}
-
 #menu > a {
-    background-color: white;
+    background-color: #ffffff;
     padding: 15px 30px;
     border-radius: 4px;
     text-decoration: none;
@@ -25,61 +32,60 @@
     text-transform: uppercase;
 }
 
-body {
-    text-align: center;
-    background-color: #f7f7f7;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-main {
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 50px;
+}
+
+.grid-descricao {
+    background-color: #ffffff;
+    display: grid;
+    align-content: center;
+    justify-items: end;
+    text-align: right;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
 }
 
 .img {
     max-width: 100%;
-}
-
-.main-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
-}
-
-.grid-descricao {
-    background-color: white;
-    display: grid;
-    align-content: center;
-    place-items: end;
-    text-align: right;
-    gap: 20px;
-    padding: 20px;
-}
-
-#vantagens {
-    text-align: right;
+    display: block;
 }
 
 #vermais {
     background-color: #ee2211;
     padding: 15px 30px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+#detalhe {
+    width: 60px;
+    height: 4px;
+    background-color: #ee2211;
+    position: absolute;
+    top: 40px;
+    right: -30px;
 }
 
 #vantagens{
     color: rgba(0, 0, 0, 0.26);
     font-size: 64px;
     align-self: center;
-    padding: 20px;
+    text-align: right;
+    padding: 40px;
+    text-transform: uppercase;
 }
 
 #div-itens {
-    background-color: white;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 40px;
 }
 .grid-itens {
     display: grid;
@@ -98,7 +104,7 @@ main {
 }
 
 footer {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     max-width: 100%;
 }
