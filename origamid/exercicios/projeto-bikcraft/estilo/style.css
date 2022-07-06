@@ -169,6 +169,11 @@ footer {
 
     #vantagens {
         text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #div-itens {
+        padding: 30px;
     }
 
     #lista-menu {
