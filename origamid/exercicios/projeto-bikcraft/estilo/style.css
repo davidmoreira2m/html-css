@@ -47,7 +47,7 @@ p {
 
 .main-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 1fr 1fr;
     max-width: 1000px;
     margin: auto;
 }
@@ -63,7 +63,7 @@ p {
     position: relative;
 }
 
-/* .grid-descricao::after{ 
+.grid-descricao::after{ 
     content: "";
     width: 60px;
     height: 4px;
@@ -72,7 +72,7 @@ p {
     top: 40px;
     right: -30px;
 
-} */
+}
 
 .img {
     max-width: 100%;
@@ -133,4 +133,41 @@ footer {
     padding: 20px;
     max-width: 100%;
     margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 1rem;
+    }
+    #vantagens {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-grid{
+        grid-template-columns: 1fr;
+    }
+    .grid-descricao::after{
+        display: none;
+    }
+    #lista-menu a {
+        padding: 0.5rem 1rem;
+        border-radius: 2px;
+    }
+    #lista-menu {
+        gap: 10px;
+    }
+    #bikcraft {
+        margin-top: 30px;
+    }
+
+    #lista-menu {
+        margin: 30px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
 }
