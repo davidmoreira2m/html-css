@@ -38,10 +38,11 @@ p {
     color: #000000;
     text-transform: uppercase;
     display: inline-block;
+    border: 2px solid #f7f7f7;
 }
 
 #lista-menu a:hover {
-    outline: 2px solid #ee2211;
+    border-color:  #ee2211;
 }
 
 .main-grid{
@@ -89,6 +90,7 @@ p {
 
 #vermais:hover {
     background-color: #900;
+    transition: 0.2s;
 }
 
 #vantagens{
@@ -111,6 +113,7 @@ p {
     text-align: left;
     padding: 20px;
     gap: 10px 20px;
+    border-left: 4px solid #fff;
 }
 
 .grid-itens:nth-child(odd) {
@@ -118,7 +121,7 @@ p {
 }
 
 .grid-itens:hover {
-    border-left: 4px solid #ee2211;
+    border-color: #ee2211;
 }
 
 .grid-itens > p {
