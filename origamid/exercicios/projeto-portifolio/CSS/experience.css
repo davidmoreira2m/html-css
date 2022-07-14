@@ -1,12 +1,3 @@
-.experience {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100px
-}
-
 .experience__title {
     font-size: 8rem;
     line-height: 1;
@@ -89,10 +80,6 @@
 }
 
 @media (max-width: 800px) {
-    .experience {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
 
     .experience__title {
         color: #141414;
