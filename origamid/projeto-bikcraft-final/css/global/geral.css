@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+img[src$=".jpg"] {
+    border-radius: 4px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
