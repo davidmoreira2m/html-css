@@ -13,7 +13,11 @@
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
+
+/* Seguros */
 @import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
 
 /* Termos e Condições */
 @import "./termos/termos.css";
